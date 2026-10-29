@@ -1,0 +1,11 @@
+{
+  "firstName": "Alex",
+  "lastName": "Example",
+  "email": "alex.example@example.com",
+  "phone": "0600000000",
+  "city": "Paris",
+  "linkedin": "https://example.com/in/alex-example",
+  "currentTitle": ".NET Developer",
+  "availability": "immediate",
+  "message": "Fake profile used to test automatic form filling."
+}

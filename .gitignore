@@ -1,0 +1,12 @@
+.DS_Store
+.github/hooks/tool-use.log
+node_modules/
+tmp/
+test-results/
+playwright-report/
+
+# Playwright
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/

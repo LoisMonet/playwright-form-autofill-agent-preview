@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Application - test form</title>
+  <style>
+    body { font-family: sans-serif; max-width: 640px; margin: 2rem auto; padding: 0 1rem; }
+    label { display: block; margin-top: 1rem; font-weight: bold; }
+    input, select, textarea { width: 100%; padding: .4rem; margin-top: .25rem; box-sizing: border-box; }
+    button { margin-top: 1.5rem; padding: .6rem 1.2rem; }
+    #submitted { display: none; margin-top: 1rem; color: green; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <!-- Local test form that imitates the fields of an online job application.
+       No network call: the submit button only shows a message, so a test can
+       check whether the form was submitted. -->
+  <h1>Apply: Software Development Engineer</h1>
+  <form id="application">
+    <label for="first-name">First name</label>
+    <input id="first-name" name="firstName" type="text">
+
+    <label for="last-name">Last name</label>
+    <input id="last-name" name="lastName" type="text">
+
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email">
+
+    <label for="phone">Phone</label>
+    <input id="phone" name="phone" type="tel">
+
+    <label for="city">City</label>
+    <input id="city" name="city" type="text">
+
+    <label for="linkedin">LinkedIn profile</label>
+    <input id="linkedin" name="linkedin" type="url">
+
+    <label for="current-title">Current title</label>
+    <input id="current-title" name="currentTitle" type="text">
+
+    <label for="availability">Availability</label>
+    <select id="availability" name="availability">
+      <option value="">-- Choose --</option>
+      <option value="immediate">Immediate</option>
+      <option value="one-month">Within one month</option>
+      <option value="three-months">Within three months</option>
+    </select>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+  <p id="submitted">Application submitted</p>
+
+  <script>
+    document.getElementById("application").addEventListener("submit", (event) => {
+      event.preventDefault();
+      document.getElementById("submitted").style.display = "block";
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "First name": "firstName",
+  "Last name": "lastName",
+  "Surname": "lastName",
+  "Email": "email",
+  "Email address": "email",
+  "Phone": "phone",
+  "City": "city",
+  "LinkedIn profile": "linkedin",
+  "Current title": "currentTitle",
+  "Availability": "availability",
+  "Message": "message"
+}
